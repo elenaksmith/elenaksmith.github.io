@@ -246,6 +246,19 @@ iframe{
     padding: 10px;
     vertical-align: top;
     overflow: scroll;
+    font-size: medium;
+}
+
+.contents {
+    box-sizing: border-box;
+    border: 1.5px solid dimgray;
+	border-radius: 4px;
+	padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+	font-size: medium;
+    width: fit-content;
 }
 
 /**/
