@@ -86,6 +86,9 @@ article {
     padding-bottom: 5em;
 }
 
+* {
+  box-sizing: border-box;
+}
 
 /**/
 /*main/other*/
@@ -130,6 +133,20 @@ main {
     .column3 {
         width: 100%;
     }
+}
+
+/**/
+/*home/index page*/
+/**/
+
+.homep {
+    margin:auto;
+    display: inline-block;
+    width: 45%;
+    padding: 10px;
+    vertical-align: top;
+    overflow: scroll;
+    font-size: medium;
 }
 
 
@@ -261,6 +278,9 @@ iframe{
     width: fit-content;
 }
 
+.graphic {
+    padding-top: 3%;
+}
 /**/
 /*footer stuff*/
 /**/
