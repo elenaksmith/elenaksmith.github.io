@@ -82,6 +82,10 @@ p {
     text-align: left;
 }
 
+article {
+    padding-bottom: 5em;
+}
+
 
 /**/
 /*main/other*/
@@ -109,8 +113,9 @@ main {
 .column2 {
     margin:auto;
     display: inline-block;
+    width: 40%;
     padding: 5px;
-    vertical-align: center;
+    vertical-align: top;
 }
   
 /* Clear floats after the columns */
@@ -161,10 +166,10 @@ label {
 	list-style:none;
 }
 
-ul {
+/*ul {
     list-style-type: none;
     align-items: center;
-}
+}*/
 
 /* stylize the text input elements */
 input[type=text] {
