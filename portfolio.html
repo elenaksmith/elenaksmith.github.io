@@ -70,10 +70,10 @@
                 
             </div>
             <h2 id="buffrest">The Buff Restaurant Website Redesign</h2>
-            <div>
+            <div class="img">
                 <h3 id="brreport">Full Report:
-                <a href="https://docs.google.com/document/d/1zgFIM0A1qzh74bM_vFMB3mOX3eO4sGERuGjP9zGXo5o/edit?usp=sharing">Link</a>
-            </h3>
+                    <a href="https://docs.google.com/document/d/1zgFIM0A1qzh74bM_vFMB3mOX3eO4sGERuGjP9zGXo5o/edit?usp=sharing">Link</a>
+                </h3>
                 <!--<iframe src="https://docs.google.com/document/d/1zgFIM0A1qzh74bM_vFMB3mOX3eO4sGERuGjP9zGXo5o/edit?embedded=true" width="80%" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>-->
                 <h3 id="brhome">Home Page:</h3>
                 <div class="column2">
@@ -97,13 +97,22 @@
             </div>
             <h2 id="graphic_design" class="graphic">Graphic Design Projects</h2>
             <p class="portfolio" style="text-align: center;"> Still in progress!</p>
-            <div class="row"> 
-                <div class="column2">
-                    <img src="./media/pops2019.jpg" style="width:100%">
+            <div class="img">
+                <div class="row"> 
+                    <div class="column2">
+                        <img src="./media/pops2019.jpg" style="width:100%">
+                    </div>
+                    <div class="column2">
+                        <img src="./media/keep_the_dream.jpg" style="width:100%">
+                    </div>
                 </div>
-                <div class="column2">
-                    <img src="./media/keep_the_dream.jpg" style="width:100%">
-                </div>
+            </div>
+
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+                <span class="close">×</span>
+                <img class="modal-content" id="img01">
+                <div id="caption"></div>
             </div>
         </article>
 
@@ -119,6 +128,35 @@
         </div>
     </footer>
 
+    <!--trying out image on click stuff that might not work idk-->
+    <script>
+        //get the modal
+        var modal = document.getElementById('myModal');
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() { 
+        modal.style.display = "none";
+        }
+
+        // Get all images and insert the clicked image inside the modal
+        // Get the content of the image description and insert it inside the modal image caption
+        var images = document.getElementsByTagName('img');
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        var i;
+        for (i = 0; i < images.length; i++) {
+        images[i].onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            modalImg.alt = this.alt;
+            captionText.innerHTML = this.nextElementSibling.innerHTML;
+        }
+        }
+
+    </script>
 
 </body>
 
