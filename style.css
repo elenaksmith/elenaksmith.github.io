@@ -232,23 +232,9 @@ input[type=submit]:focus {
 /*contact page*/
 /**/
 
-.follow-list img{
-    border: 1px solid black;
-    border-radius: 4px;
-    width: 5em;
-    margin: 7.5px;
-}
-
 iframe{
     border:0;
     box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15);
-}
-
-#location1 {
-    width: 15%;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
 }
 
 /**/
@@ -358,7 +344,3 @@ footer {
     overflow: hidden;
 }
 
-footer h2 {
-    color: white;
-    font-size: medium;
-}
