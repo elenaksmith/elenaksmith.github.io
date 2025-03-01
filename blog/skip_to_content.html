@@ -40,10 +40,106 @@
     <main class="flex-container" role="main" id="main">
         <!--the welcome text-->
         <article>
-            <h1>Skip to Main Content Link</h1>
+            <h1 role="heading">Skip to Main Content Link</h1>
             <div class="blog">
                 <p class="date">February 28, 2025</p>
-            </div>
+                <p>
+                    One accessibility feature that is relatively unknown to those who don’t use their keyboard to navigate webpages is the “Skip to Main Content” link. Also known as a “Skip to Content” link or an accessibility skip link, this is a link that usually appears as the first link on the page before the main navigation menu. This link is typically hidden unless the keyboard is focused on it. When selected, this feature will skip the focus from the “Skip to Content” link to the main content of a webpage, bypassing the main navigation menu.
+                </p>
+                <p>
+                    The website for <a href="https://www.bbc.com/">BBC News</a> has an excellent example of a “Skip to Content” button: when the focus is on it, it appears, it’s sufficiently large, it has a highlight around it, the text has good color contrast against the background, and perhaps most importantly, it works! If you are able to and haven’t tried it already, try going to BBC or some of your favorite webpages and tabbing through them.
+                </p>
+                <img alt="'Skip to content' link on BBC website" width="100%" style="padding:12px;" class="light-image" src="../media/bbc-skip-link.png">
+                <figcaption>'Skip to content' link on BBC website</figcaption>
+                <br>
+                <p>
+                    The “Skip to Main Content” link is effective at saving time, energy, and potentially frustration for users who utilize a keyboard to navigate webpages who wish to skip to the main content of a webpage. Without it, a user may be stuck tabbing through ten or more links and buttons in a navigation menu before they’re able to access the content past the navigation menu that they wish to read. And that’s only if they don’t stuck in a poorly-designed menu that traps their focus (this has happened to me before with drop-down menus).
+                </p>
+                <p>
+                    So, how do you actually implement a "Skip to Content" link in a webpage? At the most basic, you'll need HTML and CSS:
+                </p>
+                <h2>HTML</h2>
+                
+                <div style="text-align: left;">
+                    <pre><code>
+                        &lt;body&gt;
+                            &lt;!-- This is the skip to content link: --&gt;
+                            &lt;a href="#main" class="skip"&gt;Skip to content&lt;/a&gt;
+                            &lt;!-- Navigation menu --&gt;
+                            &lt;nav role="navigation"&gt;
+                                &lt;a href="home.html"&gt;Home&lt;/a&gt;
+                                &lt;a href="about.html"&gt;About&lt;/a&gt;
+                                &lt;a href="contact.html"&gt;Contact&lt;/a&gt;
+                            &lt;/nav&gt;
+                            &lt;!-- Main content --&gt;
+                            &lt;main id=“main" role="main"&gt;
+                                &lt;h1&gt;Heading&lt;/h1&gt;
+                                &lt;!-- Put page content here --&gt;
+                            &lt;/main&gt;
+                        &lt;/body&gt;
+                    </code></pre>
+                </div>
+                <!-- 
+                <pre><div class="div-block">
+<code class="code-block">
+<span style="display:inline-block;min-width:2.25em;padding-right:1em;text-align:right;user-select:none;color:hsl(230, 4%, 64%);font-style:italic">1</span>
+<span class="token" style="color:hsl(230, 8%, 24%)">&lt;</span><span class="token" style="color:hsl(5, 74%, 59%)">body</span><span class="token" style="color:hsl(230, 8%, 24%)">&gt;</span><span>
+</span><span class="linenumber react-syntax-highlighter-line-number" style="display:inline-block;min-width:2.25em;padding-right:1em;text-align:right;user-select:none;color:hsl(230, 4%, 64%);font-style:italic">2</span><span></span><span class="token" style="color:hsl(230, 8%, 24%)">&lt;</span><span class="token" style="color:hsl(5, 74%, 59%)">code</span><span class="token" style="color:hsl(230, 8%, 24%)">&gt;</span><span>
+</span><span class="linenumber react-syntax-highlighter-line-number" style="display:inline-block;min-width:2.25em;padding-right:1em;text-align:right;user-select:none;color:hsl(230, 4%, 64%);font-style:italic">3</span><span></span><span class="token named-entity" style="color:hsl(230, 8%, 24%);cursor:help">&amp;lt;</span><span>div</span><span class="token named-entity" style="color:hsl(230, 8%, 24%);cursor:help">&amp;gt;</span><span>This is a div element</span><span class="token named-entity" style="color:hsl(230, 8%, 24%);cursor:help">&amp;lt;</span><span>/div</span><span class="token named-entity" style="color:hsl(230, 8%, 24%);cursor:help">&amp;gt;</span><span>
+</span><span class="linenumber react-syntax-highlighter-line-number" style="display:inline-block;min-width:2.25em;padding-right:1em;text-align:right;user-select:none;color:hsl(230, 4%, 64%);font-style:italic">4</span><span></span><span class="token" style="color:hsl(230, 8%, 24%)">&lt;/</span><span class="token" style="color:hsl(5, 74%, 59%)">code</span><span class="token" style="color:hsl(230, 8%, 24%)">&gt;</span><span>
+</span><span class="linenumber react-syntax-highlighter-line-number" style="display:inline-block;min-width:2.25em;padding-right:1em;text-align:right;user-select:none;color:hsl(230, 4%, 64%);font-style:italic">5</span><span></span><span class="token" style="color:hsl(230, 8%, 24%)">&lt;/</span><span class="token" style="color:hsl(5, 74%, 59%)">body</span><span class="token" style="color:hsl(230, 8%, 24%)">&gt;</span></code></div></pre>
+                            </div>
+                -->
+                <p>
+                    In this HTML snippet, the "Skip to Content" link is above the navigation menu, located within the <code>&lt;nav&gt;</code> tag. 
+                    After the navigation menu is <code>&lt;main&gt;</code>, where main content can go. Some important things to note here are that 
+                    <code>href="#main"</code> needs to be in the "Skip to Content" link <code>&lt;a&gt;</code> tag in addition to <code>id=“main"</code> in <code>&lt;main&gt;</code>.
+                    This anchor tag setup is really where the magic happens that allows a user to bypass other content&mdash;in this case the nav bar&mdash;to other content on a page.
+                    If you'd like to style the "Skip to Content" link to be hidden until it's focused on, you'll most likely want to include a class in order to  
+                    stylize it. I put <code>class="skip"</code>, but the name can really be anything as long as it matches the class in your CSS content.
+                </p>
+                <p>
+                    As for CSS, you're welcome to use your own, but this is what I currently have for my website that seems to work:
+                </p>
+                <h2>CSS</h2>
+                <div style="text-align: left;">
+                    <pre><code>
+                        .skip {
+                            position: absolute;
+                            left: -10000px;
+                            top: auto;
+                            width: 1px;
+                            height: 1px;
+                            overflow: hidden;
+                        }
+                        
+                        .skip:focus {
+                            position: relative;
+                            left: 0px;
+                            top: 1em;
+                            width: auto;
+                            height: auto;
+                            font-size: large;
+                            padding: 0.5em;
+                            margin-left: 5em;
+                        }</code></pre>
+                </div>
+                <p>
+                    When the "Skip to Content" link is not in focus, web developers typically like to hide it. 
+                    With <code>position: absolute</code> and <code>left: -10000px</code>, the link is positioned -10000 pixels to the left 
+                    relative to the nearest positioned ancestor. In many cases, this would be the main navigation menu or perhaps a header logo.
+                    These keep the link out of the way and hopefully out of sight. Just in case it's not out of sight, we can make the height and width of the link really small, such as with 
+                    <code>height: 0px</code> and <code>width: 0px</code>.
+                    Another possible solution could be to add <code>opacity: 0</code>, which should change the opacity to zero or invisible. 
+                </p>
+                <p>
+                    When the "Skip to Content" link is in focus, however, we want to make sure that it's visible to users.
+                    To make sure that it's within a user's viewport, we should position the element relative to its normal postion with <code>position: relative</code>
+                    as well as set the horizontal position of the link to a location that we know will be on the screen, such as <code>left: 0px</code>.
+                    If you had decided to hide your link with a small height and width, you'll want to make sure that you include code to reset them to a more 
+                    visible size: <code>height: auto</code> and <code>width: auto</code>. If opacity was changed, you'll want to make sure that the element is visible
+                    again with <code>opacity: 1</code>.
+                </p>
         </article>
 
         

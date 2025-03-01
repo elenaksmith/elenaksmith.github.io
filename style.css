@@ -46,7 +46,7 @@
 }
 
 .skip:focus {
-    position: relative;
+    position: fixed;
     left: 0px;
     top: 1em;
     width: auto;
@@ -90,6 +90,10 @@ article {
   box-sizing: border-box;
 }
 
+figcaption {
+    font-style: italic;
+}
+
 /**/
 /*main/other*/
 /**/
@@ -97,6 +101,11 @@ main {
     text-align: center;
 }
 
+.light-image {
+    border: 1px solid;
+    border-color: #333;
+	border-radius: 4px;
+}
 
 /**/
 /*column formatting*/
@@ -330,10 +339,52 @@ div.img img:hover{
 .blog {
     margin:auto;
     display: inline-block;
-    width: 40%;
+    width: 60%;
     padding: 5px;
     vertical-align: top;
     font-size: medium;
+}
+
+.code-tag {
+    color: #905;
+}
+
+.div-block {
+    background:hsl(230, 1%, 98%);
+    color:hsl(230, 8%, 24%);
+    /*font-family:&quot;Fira Code&quot;, &quot;Fira Mono&quot;, Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;direction:ltr;*/
+    text-align:left;
+    white-space:pre;
+    word-spacing:normal;
+    word-break:normal;
+    line-height:1.5;
+    -moz-tab-size:2;
+    -o-tab-size:2;
+    tab-size:2;
+    -webkit-hyphens:none;
+    -moz-hyphens:none;
+    -ms-hyphens:none;
+    hyphens:none;
+    padding:1em;
+    margin:0.5em 0;
+    overflow:auto;
+    border-radius:0.3em;
+}
+
+.code-block {
+    white-space:pre;
+    background:hsl(230, 1%, 98%);
+    color:hsl(230, 8%, 24%);
+    /*font-family:&quot;Fira Code&quot;, &quot;Fira Mono&quot;, Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;direction:ltr;text-align:left;word-spacing:normal;*/
+    word-break:normal;
+    line-height:1.5;
+    -moz-tab-size:2;
+    -o-tab-size:2;
+    tab-size:2;
+    -webkit-hyphens:none;
+    -moz-hyphens:none;
+    -ms-hyphens:none;
+    hyphens:none;
 }
 
 /**/
