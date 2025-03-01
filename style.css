@@ -80,6 +80,7 @@ h1 {
 
 p {
     text-align: left;
+    line-height: 1.5;
 }
 
 article {
@@ -334,6 +335,7 @@ div.img img:hover{
 /**/
 
 .date {
+    margin-top: 1em;
     font-style: italic;
 }
 
@@ -344,6 +346,12 @@ div.img img:hover{
     padding: 5px;
     vertical-align: top;
     font-size: medium;
+}
+
+.blog p {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    line-height: 1.5;
 }
 
 .code-tag {
