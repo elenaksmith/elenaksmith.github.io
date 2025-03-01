@@ -99,6 +99,7 @@ figcaption {
 /**/
 main {
     text-align: center;
+    padding-bottom: 4em;
 }
 
 .light-image {
