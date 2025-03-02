@@ -399,8 +399,14 @@ div.img img:hover{
 
 /*blog contents list page*/
 
+.blog-dir ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
 .blog-dir a {
-    border-bottom: 2px solid #dbe4ed;
+    border-bottom: 2px solid #d3d3d3;
     border-radius: 0px;
 	width: 50%;
     padding-top: 1em;
@@ -412,15 +418,12 @@ div.img img:hover{
 }
 
 .blog-dir a:hover, a:active {
-    background-color: whitesmoke;
-    border: 2px solid #dbe4ed;
+    background-color: #d3d3d3;
+    border: 2px solid #d3d3d3;
     border-radius: 4px;
 }
 
-.blog-title:hover {
-    text-decoration: underline;
-    text-decoration-color: #333;
-}
+
 
 .blog-title {
     margin:auto;
