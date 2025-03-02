@@ -405,30 +405,36 @@ div.img img:hover{
     padding: 0;
 }
 
+.blog-dir li {
+    margin: 2.3em;
+}
+
 .blog-dir a {
     border-bottom: 2px solid #d3d3d3;
     border-radius: 0px;
-	width: 50%;
     padding-top: 1em;
     padding-bottom: 1.5em;
     padding-left: 1em;
     padding-right: 1em;
     color:#333;
-    font-size: medium;
+    font-size: large;
 }
 
-.blog-dir a:hover, a:active {
+.blog-dir a:hover {
     background-color: #d3d3d3;
     border: 2px solid #d3d3d3;
     border-radius: 4px;
 }
 
-
+.blog-dir a:hover .blog-title{
+    text-decoration: underline;
+    text-decoration-color: #333;
+}
 
 .blog-title {
     margin:auto;
     display: inline-block;
-    width: 30%;
+    width: 35%;
     padding: 5px;
     vertical-align: top;
     text-align: left;
@@ -438,7 +444,7 @@ div.img img:hover{
 .blog-date {
     margin:auto;
     display: inline-block;
-    width: 30%;
+    width: 35%;
     padding: 5px;
     vertical-align: top;
     text-align: right;
