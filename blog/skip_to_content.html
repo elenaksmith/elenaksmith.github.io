@@ -49,7 +49,7 @@
                 <p>
                     The website for <a href="https://www.bbc.com/">BBC News</a> has an excellent example of a “Skip to Content” button: when the focus is on it, it appears, it’s sufficiently large, it has a highlight around it, the text has good color contrast against the background, and perhaps most importantly, it works! If you are able to and haven’t tried it already, try going to BBC or some of your favorite webpages and tabbing through them.
                 </p>
-                <img alt="'Skip to content' link on BBC website" width="100%" style="padding:12px;" class="light-image" src="../media/bbc-skip-link.png">
+                <img alt="'Skip to content' link on BBC website" width="100%" class="light-image" src="../media/bbc-skip-link.png">
                 <figcaption style="margin-top:1em;">'Skip to content' link on BBC website</figcaption>
                 <p>
                     The “Skip to Main Content” link is effective at saving time, energy, and potentially frustration for users who utilize a keyboard to navigate webpages who wish to skip to the main content of a webpage. Without it, a user may be stuck tabbing through ten or more links and buttons in a navigation menu before they’re able to access the content past the navigation menu that they wish to read. And that’s only if they don’t stuck in a poorly-designed menu that traps their focus (this has happened to me before with drop-down menus).
@@ -61,21 +61,21 @@
                 
                 <div style="text-align: left;">
                     <pre><code>
-                        &lt;body&gt;
-                            &lt;!-- This is the skip to content link: --&gt;
-                            &lt;a href="#main" class="skip"&gt;Skip to content&lt;/a&gt;
-                            &lt;!-- Navigation menu --&gt;
-                            &lt;nav role="navigation"&gt;
-                                &lt;a href="home.html"&gt;Home&lt;/a&gt;
-                                &lt;a href="about.html"&gt;About&lt;/a&gt;
-                                &lt;a href="contact.html"&gt;Contact&lt;/a&gt;
-                            &lt;/nav&gt;
-                            &lt;!-- Main content --&gt;
-                            &lt;main id=“main" role="main"&gt;
-                                &lt;h1&gt;Heading&lt;/h1&gt;
-                                &lt;!-- Put page content here --&gt;
-                            &lt;/main&gt;
-                        &lt;/body&gt;
+                        &lt;</code><code class="html-tag">body</code><code>&gt;</code>
+                            <code class="html-comment">&lt;!-- This is the skip to content link: --&gt;</code><code>
+                            &lt;</code><code class="html-tag">a</code><code class="html-attribute"> href</code><code>=</code><code class="html-keyword">"#main"</code> <code class="html-attribute">class</code><code>=</code><code class="html-keyword">"skip"</code><code>&gt;Skip to content&lt;/</code><code class="html-tag">a</code><code>&gt;
+                            </code><code class="html-comment">&lt;!-- Navigation menu --&gt;</code><code>
+                            &lt;</code><code class="html-tag">nav</code><code class="html-attribute"> role</code><code>="navigation"&gt;
+                                &lt;</code><code class="html-tag">a</code><code class="html-attribute"> href</code><code>=</code><code class="html-keyword">"home.html"</code><code>&gt;Home&lt;/</code><code class="html-tag">a</code><code>&gt;
+                                &lt;</code><code class="html-tag">a</code><code class="html-attribute"> href</code><code>=</code><code class="html-keyword">"about.html"</code><code>&gt;About&lt;/</code><code class="html-tag">a</code><code>&gt;
+                                &lt;</code><code class="html-tag">a</code><code class="html-attribute"> href</code><code>=</code><code class="html-keyword">"contact.html"</code><code>&gt;Contact&lt;/</code><code class="html-tag">a</code><code>&gt;
+                            &lt;/</code><code class="html-tag">nav</code><code>&gt;
+                            </code><code class="html-comment">&lt;!-- Main content --&gt;</code><code>
+                            &lt;</code><code class="html-tag">main</code><code class="html-attribute"> id</code><code>=</code><code class="html-keyword">"main"</code><code class="html-attribute"> role</code><code>=</code><code class="html-keyword">"main"</code><code>&gt;
+                                &lt;</code><code class="html-tag">h1</code><code></code>&gt;Heading&lt;/</code><code class="html-tag">h1</code><code></code>&gt;
+                                </code><code class="html-comment">&lt;!-- Put page content here --&gt;</code><code>
+                            &lt;/</code><code class="html-tag">main</code><code>&gt;
+                        &lt;/</code><code class="html-tag">body</code><code>&gt;
                     </code></pre>
                 </div>
                 <!-- 
@@ -102,26 +102,27 @@
                 </p>
                 <h2>CSS</h2>
                 <div style="text-align: left;">
-                    <pre><code>
-                        .skip {
-                            position: absolute;
-                            left: -10000px;
-                            top: auto;
-                            width: 1px;
-                            height: 1px;
-                            overflow: hidden;
+                    <pre><code class="css-class">
+                        .skip</code><code> {</code>
+                            <code class="css-property">position</code><code>: </code><code class="css-keyword">absolute</code><code>;</code>
+                            <code class="css-property">left</code><code>: </code><code class="css-keyword">-10000px</code><code>;</code>
+                            <code class="css-property">top</code><code>: </code><code class="css-keyword">auto</code><code>;</code>
+                            <code class="css-property">width</code><code>: </code><code class="css-keyword">1px</code><code>;</code>
+                            <code class="css-property">height</code><code>: </code><code class="css-keyword">1px</code><code>;</code>
+                            <code class="css-property">overflow</code><code>: </code><code class="css-keyword">hidden</code><code>;
                         }
                         
-                        .skip:focus {
-                            position: relative;
-                            left: 0px;
-                            top: 1em;
-                            width: auto;
-                            height: auto;
-                            font-size: large;
-                            padding: 0.5em;
-                            margin-left: 5em;
-                        }</code></pre>
+                        </code><code class="css-class">.skip</code><code>:</code><code class="css-pseudo-class">focus</code> {</code>
+                            <code class="css-property">position</code><code>: </code><code class="css-keyword">relative</code><code>;</code>
+                            <code class="css-property">left</code><code>: </code><code class="css-keyword">0px</code><code>;</code>
+                            <code class="css-property">top</code><code>: </code><code class="css-keyword">1em</code><code>;</code>
+                            <code class="css-property">width</code><code>: </code><code class="css-keyword">auto</code><code>;</code>
+                            <code class="css-property">height</code><code>: </code><code class="css-keyword">auto</code><code>;</code>
+                            <code class="css-property">font-size</code><code>: </code><code class="css-keyword">large</code><code>;</code>
+                            <code class="css-property">padding</code><code>: </code><code class="css-keyword">0.5em</code><code>;</code>
+                            <code class="css-property">margin-left</code><code>: </code><code class="css-keyword">5em</code><code>;
+                        }
+                    </code></pre>
                 </div>
                 <p>
                     When the "Skip to Content" link is not in focus, web developers typically like to hide it. 
