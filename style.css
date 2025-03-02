@@ -76,7 +76,7 @@ h1, h2 {
 
 h1 {
     font-weight: 600;
-    margin-top: 1em;
+    margin-top: 1.25em;
 }
 
 p {
@@ -333,6 +333,14 @@ div.img img:hover{
 /*blog pages*/
 /**/
 
+.back_to_blog {
+    font-size: medium;
+    text-align: left;
+    display: inline-block;
+    width: 60%;
+    margin-top: 1.075em;
+}
+
 .date {
     margin-top: 1em;
     font-style: italic;
@@ -351,6 +359,10 @@ div.img img:hover{
     margin-top: 2em;
     margin-bottom: 2em;
     line-height: 1.5;
+}
+
+.blog h1 {
+    margin-top: 0em;
 }
 
 /*for code blocks in posts*/
