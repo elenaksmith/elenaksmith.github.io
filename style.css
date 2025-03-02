@@ -76,6 +76,7 @@ h1, h2 {
 
 h1 {
     font-weight: 600;
+    margin-top: 1em;
 }
 
 p {
@@ -300,19 +301,17 @@ div.img img:hover{
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-  }
+}
   
-  /* Modal Content (image) */
-  .modal-content {
+/* Modal Content (image) */
+.modal-content {
     margin: auto;
     display: block;
     width: 80%;
     max-width: 700px;
-  }
+}
 
-  /**/
-
-  /* The Close Button */
+/* The Close Button */
 .close {
     position: absolute;
     top: 15px;
@@ -321,14 +320,14 @@ div.img img:hover{
     font-size: 40px;
     font-weight: bold;
     transition: 0.3s;
-  }
-  
-  .close:hover,
-  .close:focus {
+}
+
+.close:hover,
+.close:focus {
     color: #bbb;
     text-decoration: none;
     cursor: pointer;
-  }
+}
 
 /**/
 /*blog pages*/
@@ -353,6 +352,8 @@ div.img img:hover{
     margin-bottom: 2em;
     line-height: 1.5;
 }
+
+/*for code blocks in posts*/
 
 .code-tag {
     color: #905;
@@ -394,6 +395,50 @@ div.img img:hover{
     -moz-hyphens:none;
     -ms-hyphens:none;
     hyphens:none;
+}
+
+/*blog contents list page*/
+
+.blog-dir a {
+    border-bottom: 2px solid #dbe4ed;
+    border-radius: 0px;
+	width: 50%;
+    padding-top: 1em;
+    padding-bottom: 1.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    color:#333;
+    font-size: medium;
+}
+
+.blog-dir a:hover, a:active {
+    background-color: whitesmoke;
+    border: 2px solid #dbe4ed;
+    border-radius: 4px;
+}
+
+.blog-title:hover {
+    text-decoration: underline;
+    text-decoration-color: #333;
+}
+
+.blog-title {
+    margin:auto;
+    display: inline-block;
+    width: 30%;
+    padding: 5px;
+    vertical-align: top;
+    text-align: left;
+    font-weight: bold;
+}
+
+.blog-date {
+    margin:auto;
+    display: inline-block;
+    width: 30%;
+    padding: 5px;
+    vertical-align: top;
+    text-align: right;
 }
 
 /**/
