@@ -70,7 +70,7 @@
     text-align: center;
 }
 
-h1, h2 {
+h1, h2, h3, h4, h5, h6 {
     color: #333;
 }
 
@@ -257,7 +257,7 @@ iframe{
     text-align: left;
     margin:auto;
     display: inline-block;
-    width: 66%;
+    width: 70%;
     padding: 10px;
     vertical-align: top;
     overflow: scroll;
@@ -265,15 +265,35 @@ iframe{
 }
 
 .contents {
-    box-sizing: border-box;
-    border: 1.5px solid dimgray;
-	border-radius: 4px;
 	padding-top: 6px;
     padding-bottom: 6px;
     padding-left: 10px;
     padding-right: 10px;
 	font-size: medium;
-    width: fit-content;
+}
+
+.col_port {
+    margin:0;
+    display: inline-block;
+    padding: 10px;
+    vertical-align: top;
+    overflow: scroll;
+}
+
+.port_main {
+    border-left: 1px solid lightgray;
+}
+
+.contents ul {
+    text-align: left;
+}
+
+.contents li {
+    padding: 1rem;
+}
+
+.contents a {
+    color: #333;
 }
 
 .graphic {

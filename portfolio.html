@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="portfolio_style.css">
     <link rel="icon" type="image/x-icon" href="./media/e.png">
     <!------------------------------------------------>
     <!-- the below three lines are a fix to get HTML5 semantic elements working in old versions of Internet Explorer-->
@@ -41,12 +41,14 @@
         <!--the welcome text-->
         <article>
             <h1>Portfolio</h1>
-            <div class="portfolio">
+            <div class="portfolio" style="border-bottom: 1px solid lightgray;">
                 <p>I'd love to be able to combine my interest in coding with my interest in graphic design. 
-                    Feel free to browse through some of my art and projects below! 
+                    Feel free to browse through some of my art and projects below! Click on an image to make it bigger.
                 </p>
-                <div class="contents">
-                    <p><b>Contents:</b></p>
+            </div>
+            <div class="row">
+                <aside class="contents col_port" style="width: 20%;">
+                    <h2>Contents:</h2>
                     <ul>
                         <li>
                             <a href="#buffrest">The Buff Restaurant Website Redesign</a>
@@ -66,43 +68,43 @@
                             <a href="#graphic_design">Graphic Design Projects</a>
                         </li>
                     </ul>
-                </div>
-            </div>
-            <h2 id="buffrest">The Buff Restaurant Website Redesign</h2>
-            <div class="img">
-                <h3 id="brreport">Full Report:
-                    <a href="https://docs.google.com/document/d/1zgFIM0A1qzh74bM_vFMB3mOX3eO4sGERuGjP9zGXo5o/edit?usp=sharing">Link</a>
-                </h3>
-                <!--<iframe src="https://docs.google.com/document/d/1zgFIM0A1qzh74bM_vFMB3mOX3eO4sGERuGjP9zGXo5o/edit?embedded=true" width="80%" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>-->
-                <h3 id="brhome">Home Page:</h3>
-                <div class="column2">
-                    <h4>Before:</h4>
-                    <img alt="The Buff Restaurant's website on the home page before changes were made." width="100%" src="./media/buffrest_before.jpg">
-                </div>
-                <div class="column2">
-                    <h4>After:</h4>
-                    <img alt="The Buff Restaurant's website on the home page after changes were made." width="100%" src="./media/buffrest_after.jpg">
-                </div>
-                <h3 id="brcontact">Contact Page:</h3>
-                <div class="column2">
-                    <h4>Before:</h4>
-                    <img alt="The Buff Restaurant's contact page before changes were made." width="100%" src="./media/buffcontactbefore.jpg">
-                </div>
-                <div class="column2">
-                    <h4>After:</h4>
-                    <img alt="The Buff Restaurant's contact page after changes were made." width="100%" src="./media/buffcontactafter.jpg">
-                </div>
-                
-            </div>
-            <h2 id="graphic_design" class="graphic">Graphic Design Projects</h2>
-            <p class="portfolio" style="text-align: center;"> Still in progress!</p>
-            <div class="img">
-                <div class="row"> 
-                    <div class="column2">
-                        <img src="./media/pops2019.jpg" style="width:100%">
+                </aside>
+                <div class="port_main col_port" style="width: 50%;">
+                    <h2 id="buffrest">The Buff Restaurant Website Redesign</h2>
+                    <div class="img">
+                        <h3 id="brreport">Full Report:
+                            <a href="https://docs.google.com/document/d/1zgFIM0A1qzh74bM_vFMB3mOX3eO4sGERuGjP9zGXo5o/edit?usp=sharing">Link</a>
+                        </h3>
+                        <!--<iframe src="https://docs.google.com/document/d/1zgFIM0A1qzh74bM_vFMB3mOX3eO4sGERuGjP9zGXo5o/edit?embedded=true" width="80%" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>-->
+                        <h3 id="brhome">Home Page:</h3>
+                        <div class="column2">
+                            <h4>Before:</h4>
+                            <img alt="The Buff Restaurant's website on the home page before changes were made." width="100%" src="./media/buffrest_before.jpg">
+                        </div>
+                        <div class="column2">
+                            <h4>After:</h4>
+                            <img alt="The Buff Restaurant's website on the home page after changes were made." width="100%" src="./media/buffrest_after.jpg">
+                        </div>
+                        <h3 id="brcontact">Contact Page:</h3>
+                        <div class="column2">
+                            <h4>Before:</h4>
+                            <img alt="The Buff Restaurant's contact page before changes were made." width="100%" src="./media/buffcontactbefore.jpg">
+                        </div>
+                        <div class="column2">
+                            <h4>After:</h4>
+                            <img alt="The Buff Restaurant's contact page after changes were made." width="100%" src="./media/buffcontactafter.jpg">
+                        </div>
                     </div>
-                    <div class="column2">
-                        <img src="./media/keep_the_dream.jpg" style="width:100%">
+                    <h2 id="graphic_design" class="graphic">Graphic Design Projects</h2>
+                    <div class="img" style="padding-top: 1em;">
+                        <div class="row"> 
+                            <div class="column2">
+                                <img src="./media/pops2019.jpg" style="width:100%">
+                            </div>
+                            <div class="column2">
+                                <img src="./media/keep_the_dream.jpg" style="width:100%">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
