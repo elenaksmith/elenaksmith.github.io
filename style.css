@@ -96,6 +96,10 @@ figcaption {
     font-style: italic;
 }
 
+.body_bg {
+    background-image: url('./media/yellow_pink_bg.png');
+}
+
 /**/
 /*main/other*/
 /**/
@@ -151,6 +155,16 @@ main {
 /*home/index page*/
 /**/
 
+.homeh1 {
+    min-height: 95vh;
+    align-content: center;
+}
+
+.homeh1 h1 {
+    font-size: 500%;
+    margin-top: 0;
+}
+
 .homep {
     margin:auto;
     display: inline-block;
@@ -161,6 +175,12 @@ main {
     font-size: medium;
 }
 
+.about {
+    background-color: white;
+    min-height: 100vh;
+    overflow: auto;
+    align-content: center;
+}
 
 /**/
 /*form elements*/
