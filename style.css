@@ -182,11 +182,18 @@ main {
 }
 
 .homep {
-    margin:auto;
+    margin: auto;
     display: inline-block;
     width: 45%;
     padding: 10px;
     vertical-align: top;
+    overflow: scroll;
+    font-size: medium;
+}
+
+.contact {
+    margin: auto;
+    padding: 10px;
     overflow: scroll;
     font-size: medium;
 }
@@ -278,11 +285,6 @@ input[type=submit]:focus {
 	background-color: gray !important;
 	border: 1.5px solid black;
 }
-
-
-/**/
-/*contact page*/
-/**/
 
 iframe{
     border:0;
