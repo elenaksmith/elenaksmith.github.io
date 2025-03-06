@@ -38,7 +38,7 @@
             <div class="homeh1">
                 <h1>Welcome, I'm Elena!</h1>
                 <a href="#about">
-                    <img src="./media/downarrow.png" width="3%" id="scrollarrow">
+                    <img src="./media/downarrow.png" width="3%" id="scrollarrow" alt="Jump to About section">
                 </a>
             </div>
 
@@ -86,6 +86,17 @@
         </div>
     </footer>
 
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 
 </body>
 
