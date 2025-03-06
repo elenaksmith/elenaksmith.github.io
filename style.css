@@ -36,7 +36,7 @@
 /**/
 /*skip to content*/
 /**/
-.skip {
+.skip, .skip_main {
     position: absolute;
     left: -10000px;
     top: auto;
@@ -55,6 +55,22 @@
     padding: 0.5em;
     margin-left: 5em;
 }
+
+/* temp skip button for home page while I work on the other pages*/
+.skip_main:focus {
+    position: fixed;
+    left: 0px;
+    top: 0.25em;
+    width: auto;
+    height: auto;
+    font-size: large;
+    padding: 0.5em;
+    margin-left: 5em;
+    background-color: #FFF6AD;
+    color: #333;
+    border-radius: 4px;
+}
+
 
 /**/
 /*general formatting*/
@@ -183,7 +199,7 @@ main {
 }
 
 #scrollarrow {
-    padding-top: 40px;
+    margin-top: 40px;
 }
 
 /**/
