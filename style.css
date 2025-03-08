@@ -209,6 +209,14 @@ main {
     margin-top: 40px;
 }
 
+#a_arrow {
+    opacity: 1;
+}
+
+#a_arrow:hover, #a_arrow:active, #a_arrow:focus {
+    opacity: 0.5;
+}
+
 /**/
 /*form elements*/
 /**/
