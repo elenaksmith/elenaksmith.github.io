@@ -207,6 +207,8 @@ main {
 
 #scrollarrow {
     margin-top: 40px;
+    width: 45px; 
+    height: auto;
 }
 
 #a_arrow {
@@ -303,6 +305,14 @@ iframe{
 /*portfolio page*/
 /**/
 
+.rcol {
+    width: 66%;
+}
+
+.lcol {
+    width: 33%;
+}
+
 .portfolio {
     text-align: left;
     margin:auto;
@@ -327,7 +337,6 @@ iframe{
     display: inline-block;
     padding: 10px;
     vertical-align: top;
-    overflow: scroll;
 }
 
 .port_main {
@@ -352,10 +361,15 @@ iframe{
 
 div.img img{
     cursor: pointer;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: all .3s ease;
 }
 
 div.img img:hover{
-    border: 1.5px solid #777;
+    /*border: 1.5px solid #777;*/
+    transform: scale(1.1);
 }
 
 /* The Modal (background) */
