@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>The Buff Website Redesign | Elena Smith</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One"
+    rel="stylesheet" type="text/css">
+    <!----- Add the link to your style sheet --------->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/x-icon" href="../media/e.png">
+    <!------------------------------------------------>
+    <!-- the below three lines are a fix to get HTML5 semantic elements working in old versions of Internet Explorer-->
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+    <!--header-->
+    <header role="banner" class="flex-container">
+        <a href="#main" class="skip">Skip to content</a>
+        <div class="center-text">
+            <a href="../index.html">
+                <img src="../media/eks.png" alt="Elena Smith blog home" class="header-logo">
+            </a>
+        </div>
+        <nav class="topnav" role="navigation">
+            <a href="../index.html">Home</a>
+            <a class="active" href="../portfolio.html">Portfolio</a>
+            <a href="../blog.html">Blog</a>
+        </nav>
+    </header>
+
+    <!--main content-->
+    <main class="flex-container" role="main" id="main">
+        <!--the welcome text-->
+        <article>
+            <h1>The Buff Restaurant Website Redesign</h1>
+            <h2>Project Overview</h2>
+            <p>Goal: lorem ipsum</p>
+
+            <!--
+            <div class="row">
+                <div class="col_port" style="width: 70%;">
+                    <div class="img">
+                        <h2 id="brreport">Full Report:
+                            <a href="https://docs.google.com/document/d/1zgFIM0A1qzh74bM_vFMB3mOX3eO4sGERuGjP9zGXo5o/edit?usp=sharing">Link</a>
+                        </h2>
+                        <h2 id="brhome">Home Page:</h2>
+                        <div class="column2">
+                            <h3>Before:</h3>
+                            <img alt="The Buff Restaurant's website on the home page before changes were made." width="100%" src="../media/buffrest_before.jpg">
+                        </div>
+                        <div class="column2">
+                            <h3>After:</h3>
+                            <img alt="The Buff Restaurant's website on the home page after changes were made." width="100%" src="../media/buffrest_after.jpg">
+                        </div>
+                        <h2 id="brcontact">Contact Page:</h2>
+                        <div class="column2">
+                            <h3>Before:</h3>
+                            <img alt="The Buff Restaurant's contact page before changes were made." width="100%" src="../media/buffcontactbefore.jpg">
+                        </div>
+                        <div class="column2">
+                            <h3>After:</h3>
+                            <img alt="The Buff Restaurant's contact page after changes were made." width="100%" src="../media/buffcontactafter.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            -->
+
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+                <span class="close">×</span>
+                <img class="modal-content" id="img01">
+                <div id="caption"></div>
+            </div>
+        </article>
+
+        
+    </main>
+
+    <!--footer-->
+    <footer class="flex-container" role="contentinfo">
+        <div>
+            <div class="foot">
+                <p>©2025 Elena Smith</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        //get the modal
+        var modal = document.getElementById('myModal');
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() { 
+        modal.style.display = "none";
+        }
+
+        // Get all images and insert the clicked image inside the modal
+        // Get the content of the image description and insert it inside the modal image caption
+        var images = document.getElementsByTagName('img');
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        var i;
+        for (i = 0; i < images.length; i++) {
+            images[i].onclick = function(){
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                modalImg.alt = this.alt;
+                captionText.innerHTML = this.nextElementSibling.innerHTML;
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>
