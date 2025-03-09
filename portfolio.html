@@ -40,25 +40,37 @@
         <!--the welcome text-->
         <article>
             <h1>Portfolio</h1>
-            <!-- 
-            <div class="row">
-                <div class="lcol">
-                    <h2>The Buff Restaurant Website Redesign</h2>
+            <p class="portfolio">I'd love to be able to combine my interest in coding with my interest in graphic design. 
+                Feel free to browse through some of my art and projects below!
+            </p>
+            <div class="center">
+                <div class="row_port">
+                    <div class="lcol">
+                        <h2>The Buff Restaurant Website Redesign</h2>
+                        <div id="rectangle" style="background: #FFDE7A;"></div>
+                        <p></p>
+                    </div>
+                    <div class="rcol img">
+                        <a href="./portfolio/buffredo.html">
+                            <img src="./media/bufftitleimg.png" width="100%" alt="Elena Smith's The Buff Restaurant Redesign page">
+                        </a>
+                    </div>
                 </div>
-                <div class="rcol">
-
+                <div class="row_port">
+                    <div class="lcol">
+                        <h2>Graphic Design Projects</h2>
+                        <div id="rectangle" style="background: #FF3945;"></div>
+                        <p>Just-for-fun projects that explore the balance between color, typography, and negative space</p>
+                    </div>
+                    <div class="rcol img">
+                        <a href="./portfolio/graphicdesign.html">
+                            <img src="./media/graphicdesign_title.png" width="100%" alt="Elena Smith's Graphic Design page">
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="lcol">
-                    <h2>Graphic Design Projects</h2>
-                </div>
-                <div class="rcol">
-                    
-                </div>
-            </div>
-            -->
             
+            <!--
             <div class="portfolio" style="border-bottom: 1px solid lightgray;">
                 <p>I'd love to be able to combine my interest in coding with my interest in graphic design. 
                     Feel free to browse through some of my art and projects below! Click on an image to make it bigger.
@@ -125,13 +137,7 @@
                     </div>
                 </div>
             </div>
-            
-            <!-- The Modal -->
-            <div id="myModal" class="modal">
-                <span class="close">×</span>
-                <img class="modal-content" id="img01">
-                <div id="caption"></div>
-            </div>
+            -->
         </article>
 
         
@@ -145,35 +151,6 @@
             </div>
         </div>
     </footer>
-
-    <script>
-        //get the modal
-        var modal = document.getElementById('myModal');
-
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
-
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function() { 
-        modal.style.display = "none";
-        }
-
-        // Get all images and insert the clicked image inside the modal
-        // Get the content of the image description and insert it inside the modal image caption
-        var images = document.getElementsByTagName('img');
-        var modalImg = document.getElementById("img01");
-        var captionText = document.getElementById("caption");
-        var i;
-        for (i = 0; i < images.length; i++) {
-            images[i].onclick = function(){
-                modal.style.display = "block";
-                modalImg.src = this.src;
-                modalImg.alt = this.alt;
-                captionText.innerHTML = this.nextElementSibling.innerHTML;
-            }
-        }
-
-    </script>
 
 </body>
 

@@ -160,6 +160,10 @@ main {
     clear: both;
 }
 
+.row {
+    display: table;
+}
+
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 1000px) {
     .column3 {
@@ -305,12 +309,37 @@ iframe{
 /*portfolio page*/
 /**/
 
-.rcol {
-    width: 66%;
+.lcol {
+    width: 30%;
+    height: auto;
+    margin:auto;
+    display: table-cell;
+    align-items: center;
 }
 
-.lcol {
-    width: 33%;
+.lcol p {
+    width: 80%;
+    align-items: center;
+    padding-top: 1.5em;
+    margin: auto;
+    font-size: large;
+}
+
+#rectangle {
+    background: #FFDE7A;
+    height: 5px;
+    width: 60%;
+    align-content: center;
+    margin: auto;
+    margin-top: 2em;
+}
+
+.rcol {
+    width: 60%;
+    margin:auto;
+    display: table-cell;
+    overflow: hidden;
+    vertical-align: top;
 }
 
 .portfolio {
@@ -321,7 +350,7 @@ iframe{
     padding: 10px;
     vertical-align: top;
     overflow: scroll;
-    font-size: medium;
+    font-size: large;
 }
 
 .contents {
@@ -339,20 +368,14 @@ iframe{
     vertical-align: top;
 }
 
-.port_main {
-    border-left: 1px solid lightgray;
+.row_port {
+    padding: 4em; 
+    margin-top: 2.5em;
+    margin-bottom: 2.5em;
 }
 
-.contents ul {
-    text-align: left;
-}
-
-.contents li {
-    padding: 1rem;
-}
-
-.contents a {
-    color: #333;
+.row_port h3 {
+    font-weight: 300;
 }
 
 .graphic {
