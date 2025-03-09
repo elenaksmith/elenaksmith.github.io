@@ -3,34 +3,41 @@
 /**/
 
 .topnav {
-    text-align: center;
+    text-align: right;
     overflow: hidden;
-    background-color: #333;
+    /*background-color: #333;*/
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 .topnav a {
     display: inline-block;
     vertical-align: middle;
-    color: #f2f2f2;
+    color: #333;
     text-align: center;
-    padding: 14px 16px;
+    padding: 20px 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
     text-decoration: none;
     font-size: 17px;
+    font-weight: bold;
 }
 
 .topnav a:hover{
-    background-color: #555;
-    color: white;
+    /*background-color: #555;*/
+    /*color: white;*/
     text-align: left;
+    text-decoration: wavy underline;
 }
 
 .active {
-    background-color: #555;
+    /*background-color: #555;*/
+    color: white;
 }
 
-.header-logo{
-    height: 70px;
-    padding: 5px;
+.logo{
+    float: left;
 }
 
 /**/
@@ -47,26 +54,16 @@
 
 .skip:focus {
     position: fixed;
-    left: 0px;
-    top: 1em;
-    width: auto;
-    height: auto;
-    font-size: large;
-    padding: 0.5em;
-    margin-left: 5em;
-}
-
-/* temp skip button for home page while I work on the other pages*/
-.skip_main:focus {
-    position: fixed;
-    left: 0px;
+    left: 45%;
+    margin-left: auto;
+    margin-right: auto;
     top: 0.25em;
     width: auto;
     height: auto;
     font-size: large;
     padding: 0.5em;
-    margin-left: 5em;
-    background-color: #FFF6AD;
+    /*margin-left: 5em;
+    /*background-color: #FFF6AD;*/
     color: #333;
     border-radius: 4px;
 }
@@ -114,6 +111,7 @@ figcaption {
 
 .body_bg {
     background-image: url('./media/yellow_pink_bg.png');
+    width: 100vw;
 }
 
 /**/
@@ -121,7 +119,7 @@ figcaption {
 /**/
 main {
     text-align: center;
-    padding-bottom: 4em;
+    /*padding-bottom: 4em;*/
 }
 
 .light-image {
@@ -176,7 +174,7 @@ main {
 /**/
 
 .homeh1 {
-    min-height: 95vh;
+    min-height: 90vh;
     align-content: center;
 }
 
@@ -211,6 +209,7 @@ main {
 
 #scrollarrow {
     margin-top: 40px;
+    margin-bottom: 40px;
     width: 45px; 
     height: auto;
 }
@@ -606,7 +605,7 @@ div.img img:hover{
 }
 
 footer {
-    position: fixed;
+    position: static;
     bottom: 0;
     background-color: black;
     color: #ddd;
