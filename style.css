@@ -111,7 +111,9 @@ figcaption {
 
 .body_bg {
     background-image: url('./media/yellow_pink_bg.png');
-    width: 100vw;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
 }
 
 /**/
