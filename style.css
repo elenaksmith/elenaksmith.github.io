@@ -257,7 +257,7 @@ main {
     opacity: 1;
 }
 
-#a_arrow:hover, #a_arrow:active, #a_arrow:focus {
+#a_arrow:hover, #a_arrow:active {
     opacity: 0.5;
 }
 
