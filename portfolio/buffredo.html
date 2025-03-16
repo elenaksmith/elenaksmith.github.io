@@ -38,13 +38,327 @@
         <!--the welcome text-->
         <article>
             <h1>The Buff Restaurant Website Redesign</h1>
-            <p class="portfolio" style="text-align: center;">Although the project is complete, I'm still editing this page!</p>
+            <!--<p class="portfolio" style="text-align: center;">Although the project is complete, I'm still editing this page!</p>-->
             <!--<img src="../media/bufftitleimg.png" width="55%" alt="">
             <h2>Project Overview</h2>
             <p>Goal: lorem ipsum</p>
             -->
+            <div>
+                <div class="col_port" style="width: 60%;">
+                    <img src="../media/bufftitleimg.png" width="90%" alt="">
+                </div>
+                <h2 class="buffdiv">Overview</h2>
+                <div class="col_port" style="width: 60%;">
+                    <h3>February 2025 Note</h3>
+                    <p>In the time since this project, The Buff Restaurant has actually updated their website. The original site 
+                        that this project is based on can still be found on the 
+                        <a href="https://web.archive.org/web/20231004091621/https://www.buffrestaurant.com/">Wayback Machine</a> 
+                        or in my <a href="https://elsm2388.github.io/CSCI-ATLS-3150/buffrest/home.html">Github files</a> for this 
+                        project. The Buff Restaurant’s current website can be found at <a href="https://www.buffrestaurant.com">www.buffrestaurant.com</a>.
+                    </p>
+                    <h3>Business Description</h3>
+                    <p>The Buff Restaurant in Boulder, CO is a local breakfast spot that is a go-to place for early risers and 
+                        brunch enthusiasts alike. The friendly staff welcomes guests with warm smiles, creating a homey atmosphere 
+                        with routine customers. The menu is filled with classic morning fare, featuring fluffy pancakes dripping 
+                        with maple syrup, hearty omelets, and local ground coffee. Many customers make it a point to visit The 
+                        Buff Restaurant when they are in town or make a weekly visit for breakfast. </p>
+                    <h3>Project Goals</h3>
+                    <p>The current website of The Buff Restaurant showcases their hours, their menu, about them, and ways to 
+                        contact them as their main focal points. Additionally, customers can click links that go to external 
+                        websites to order food online for pickup or delivery, buy gift certificates, and check the balances of 
+                        their gift certificates.
+                    </p>
+                    <p>As it stands, there are several issues with the current version of The Buff Restaurant’s website. We plan 
+                        to make the site more user friendly and accessible through improving the structure of web pages, improving 
+                        color contrast, removing distracting elements, replacing important text-based images such that the content 
+                        can be read with assistive technology, and ensuring that webpages can be resized without loss of content or 
+                        functionality. Firstly, the current structure of The Buff Restaurant’s web pages, such as page layout and 
+                        order of information provided, could be improved. The structure of the website is somewhat inconsistent and 
+                        not always informative to the content included. For example, the main content of the “Contact” page includes 
+                        several headers of size h6, with no bigger headers above them. We plan to improve this by adding headers and 
+                        changing some of the tag sizes of the headers currently included. Additionally, color contrast and font size 
+                        could use some improvement. Although the accessibility tool WAVE doesn’t detect contrast of background 
+                        gradients and transparency, there are some contrast errors between text on the website and its wood-patterned 
+                        background. We plan to address this by either adding a background to text that passes WCAG standards or 
+                        changing the website’s wood-patterned background to a color or image that doesn’t cause contrast issues. 
+                        Furthermore, there are some distracting elements on the “Home” and “Contact” pages that we plan to remove 
+                        while still alerting customers to the importance of the content. Additionally, the menus provided by The 
+                        Buff Restaurant appear to be poor-quality images that cannot be read by screen readers. We plan to fix this 
+                        by replacing the images of the menu with searchable pdfs or perhaps even simple text. Finally, all of the 
+                        webpages on the website require horizontal scrolling when zoomed in too far. We plan to edit the HTML such 
+                        that we follow WCAG’s Guideline 1.4 - Distinguishable and 1.4.4 Resize Text - Level AA, which states that 
+                        “Except for captions and images of text, text can be resized without assistive technology up to 200 percent 
+                        without loss of content or functionality.”
+                    </p>
+                    </div>
+                    <h2 class="buffdiv">Before</h2>
+                    <div class="col_port" style="width: 60%;">
+                    <h3>Images of Current Site</h3>
+                    <h4>Home Page</h4>
+                    <img src="../media/buffrest_before.jpg" width="50%" alt="">
+                    <h4>Contact Page</h4>
+                    <img src="../media/buffcontactbefore.jpg" width="50%" alt="">
+                    <h3>Heuristic Evaluation of Current Site</h3>
+                    <h4 style="display: inline;">Date of Report:</h4> 
+                    <p style="display: inline;">November 19, 2023</p>
+                    <h4>Methods</h4>
+                    <p>We used WAVE, a web accessibility evaluation tool powered by WebAim; the Chrome extension Web Developer by 
+                        Chris Pederick; and a Mac application called “Color Picker.” WAVE and Web Developer were used together for 
+                        most of the items; Color Picker was only used for the Color Contrast item in order to determine the color 
+                        ratios of text on a patterned background.</p>
+                    <h4>Detailed Findings</h4>
+                </div>
+                <div class="col_port" style="width: 80%; padding-top: 0;">
+                    <table border="1" cellpadding="5">
+                        <tbody>
+                            <tr class="titletr">
+                                <td><b>Section</b></td>
+                                <td><b>Item</b></td>
+                                <td><b>Heuristic Questions</b></td>
+                                <td><b>Our Findings</b></td>
+                                <td><b>Recommendation and WCAG 2.1 Language</b></td>
+                            </tr>
+                            <tr>
+                                <td>Structure</td>
+                                <td>Page Title</td>
+                                <td>
+                                    <ul>
+                                        <li>Does every page have a title? </li>
+                                        <li>Does each page title adequately and briefly describe the content of the page?</li>
+                                        <li>Are the page titles on the site adequately distinguished from each other?</li>
+                                    </ul>
+                                </td>
+                                <td>Every page does have a title. These pages include: 
+                                    <ul>
+                                        <li>The Buff Restaurant | Boulder, CO</li>
+                                        <li>ABOUT | the-buff-restaurant</li>
+                                        <li>DINE-IN MENU | the-buff-restaurant</li>
+                                        <li>DRINKS | the-buff-restaurant</li>
+                                        <li>CONTACT | the-buff-restaurant</li>
+                                    </ul>
+                                    Most of the page titles are already front-loaded and fairly succinct. They are all also adequately distinguished from each other.
+                                </td>
+                                <td>Recommendation: 
+                                    Most of the page titles are already front-loaded, succinct, and distinguished from each other, which is good. However, the title for the home page of the website, “The Buff Restaurant | Boulder, CO,” could be improved by stating that it’s the home page: “The Buff Restaurant home page.”
+                                    <br><br>
+                                    WCAG 2.1 guideline link: <a href="https://www.w3.org/WAI/WCAG22/Understanding/page-titled.html">Guideline 2.4 – Navigable and 2.4.2 Page Titled - Level A</a>
+                                </td>
+                            </tr>
+                            <tr style="background-color: #ededed;">
+                                <td>Structure</td>
+                                <td>Image text alternatives ("alt text")</td>
+                                <td>
+                                    <ul>
+                                        <li>Does every image have appropriate alternative text? If not, which ones are lacking or have inadequate alt text?</li>
+                                        <li>Is there information in the alt text that could  be excluded? This could include the language “button,” “link,” “image of,” etc.</li>
+                                    </ul>
+                                </td>
+                                <td>On the home page of the website, there’s a background image, a linked logo image, and several images that link to the social media pages of The Buff Restaurant. I would say that except for the background image, which is purely decorative, all of the links could be better. The current alt text of the linked logo image is empty/null, and the linked social media images state the respective titles of the websites that they’re linked to: “Instagram,” “Trip Advisor,” etc. Most of the text included in the images on this page should be included, except for maybe the word “Icon” at the end of the alt text of the linked image “Yelp! App Icon.”</td>
+                                <td>Recommendation: 
+                                    Firstly, we recommend that alt text should be added to the linked logo image above the navigation bar. Since the image links to the home page of the site, we recommend that the alt text should read “The Buff Restaurant home.” In addition, the linked social media images could include the words “The Buff Restaurant” to ensure that users know that the link goes to the social media page of The Buff Restaurant, and not just that social media website in general. For example, the current alt text “Instagram” could be changed to “The Buff Restaurant Instagram.” 
 
-            
+                                    <br><br>
+                                    WCAG 2.1 guideline link: <a href="https://www.w3.org/WAI/WCAG22/Understanding/non-text-content.html">Guideline 1.1 – Text Alternatives and 1.1.1 Non-text Content - Level A</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Structure</td>
+                                <td>Headings</td>
+                                <td>
+                                    <ul>
+                                        <li> Are there headings on the page, not just text that looks like a heading, but that is marked up as a heading: i.e. &lt;h1&gt;, &lt;h2&gt;, etc.?</li>
+                                        <li>Is the page organized appropriately? In other words, &lt;h1&gt; should describe the main purpose of the page; &lt;h2&gt; is a major section of the page; &lt;h3&gt; a subsection of an &lt;h2&gt; section.</li>
+                                        <li>Is there any text marked up as a heading that should not be a heading?</li>
+                                        <li>Do headings precede related paragraphs?</li>
+                                        <li>Do headings make sense out of context?</li>
+                                    </ul>
+                                </td>
+                                <td>There were headers on three of the five pages of The Buff Restaurant’s website. Of the pages that had headers, none of them had headings marked up as &lt;h1&gt;. Because of that, on the pages that had headings, the heading sizes didn’t make sense in terms of organizational layout. Most of the headings did generally precede related paragraphs or content. However, some of the headings do not make sense out of context. For example, there’s an h2 header on the Home page that states “7AM-2PM” that doesn’t precede related content or make much sense out of context. That, along with the text “Dining room and Patio OPEN” on the Home page, should probably not be marked up as headers. </td>
+                                <td>Recommendation: 
+                                    We recommend adding an h1 heading to each page that encompasses the purpose of each page. For example, the “Dine-in Menu” page, one of the two pages without any headings at all, could have the title “Dine-in Menu” marked up as an &lt;h1&gt; heading. Furthermore, certain headings that are already present could change to a different size of heading. For example, the several h6 headings on the “Contact” page could be changed to h2 headings under a new h1 heading that says “Contact Us.” Additionally, we recommend removing header tags from the text that we identified on the Home page that should not be a header: “7AM-2PM” and “Dining room and Patio OPEN.”
+                                    
+                                    <br><br>
+                                    WCAG 2.1 guideline link: <a href="https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships.html">Guideline 1.3 - Adaptable and 1.3.1 Info and Relationships - Level A</a>
+                                </td>
+                            </tr>
+                            <tr style="background-color: #ededed;">
+                                <td>Text</td>
+                                <td>Contrast Ratio (“color contrast”)</td>
+                                <td>
+                                    <ul>
+                                        <li>Is there any text or images of text on the page that do not meet WCAG contrast requirements?</li>
+                                        <li>Is there any text that passes the Level AA WCAG requirements but not the Level AAA?</li>
+                                    </ul>
+                                </td>
+                                <td>While according to WAVE, there are no contrast errors on the home page of The Buff Restaurant, we also checked with the Mac application Color Picker. The lightest part of the wooden background was about #F3E2AC, whereas the darkest part was about #231207. The text that lays against the wooden background included #292929 and #373B4E. As such, the website passes the WCAG requirements in the places that the background is lighter with the #F3E2AC color, but the website fails the requirements in the places where the background is darker. Because the text colors are similar in color, there are no places where the text passes the Level AA WCAG requirements but not the Level AAA.</td>
+                                <td>Recommendation: 
+                                    We recommend that The Buff Restaurant either change the background behind text to a solid color that will pass the WCAG contrast requirements. This could be done by changing the site’s wooden background to a solid color, changing only the background color of text, or adding a background color behind each section of the website while still keeping the wooden background in the border areas.
+                                    
+                                    <br><br>
+                                    WCAG 2.1 guideline link: <a href="https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum">Guideline 1.4 - Text Alternatives and 1.4.3 Contrast (Minimum) - Level AA</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Structure</td>
+                                <td>Resize Text</td>
+                                <td>
+                                    <ul>
+                                        <li>Can text be resized up to 200% zoom without assistive technology without loss of content or functionality?</li>
+                                        <li>Do form controls resize when visually rendered text is resized up to 200%?</li>
+                                        <li>Does resizing text up to 200% cause text, images, or controls to be clipped, truncated or obscured?</li>
+                                    </ul>
+                                </td>
+                                <td>All pages on the website of The Buff Restaurant require horizontal scrolling when the page zoom is set to 200%. All images, text, controls, and forms otherwise increase in size proportionately to each other without overlapping or truncated elements.</td>
+                                <td>Recommendation: 
+                                    We recommend editing the HTML such that all of the webpages are responsive to different window sizes and zoom levels.
+                                    <br><br>
+                                    WCAG 2.1 guideline link: <a href="https://www.w3.org/WAI/WCAG22/Understanding/resize-text.html">Guideline 1.4 - Distinguishable and 1.4.4 Resize Text - Level AA</a>
+                                </td>
+                            </tr>
+                            <tr style="background-color: #ededed;">
+                                <td>Control and navigation</td>
+                                <td>Keyboard access and visual focus</td>
+                                <td>
+                                    <ul>
+                                        <li>Can all controls be operated via the keyboard?</li>
+                                        <li>Is there an obvious way to discern the focus (e.g. border color changes)?</li>
+                                        <li>Are shortcuts or skip links provided to make keyboard access quicker? Are they visible and clear?</li>
+                                    </ul>
+                                </td>
+                                <td>It seems that all links, buttons, and form fields can be navigated to and operated via the keyboard. All of the content has an obvious blue border color around it when it’s in focus. When navigating the site by keyboard, there is a button that appears that says “Skip to Main Content” that allows the user to skip the navigation bar. However, it feels kind of small.
+                                </td>
+                                <td>Recommendation: 
+                                    We would only recommend making the “Skip to Main Content” button bigger.
+
+                                    <br><br>
+                                    WCAG 2.1 guideline link: <a href="https://www.w3.org/WAI/WCAG22/Understanding/keyboard.html">Guideline 2.1 – Keyboard Accessible and 2.1.1 Keyboard – Level A</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Structure</td>
+                                <td>Basic structure check</td>
+                                <td>
+                                    <ul>
+                                        <li>Does information on the web page make sense when it is read in the order that it is shown?</li>
+                                    </ul>
+                                </td>
+                                <td>The information on the homepage of the website does not entirely make sense when it is read in the order that it’s shown. For example, there’s a heading above a form when styles are applied, but when styles are turned off, other text is in between this heading and the form that it applies to.
+                                </td>
+                                <td>Recommendation: 
+                                    We recommend changing around where certain elements are in the HTML code such that content that is related will be grouped together appropriately when styles are turned off.
+                                    <br><br>
+                                    WCAG 2.1 guideline link: <a href="https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships.html">Guideline 1.3 – Adaptable and 1.3.1 Info and Relationships – Level A</a>
+                                </td>
+                            </tr>
+                            <tr style="background-color: #ededed;">
+                                <td>Structure</td>
+                                <td>Moving, Flashing, or Blinking Content</td>
+                                <td>
+                                    <ul>
+                                        <li>Is there any moving, blinking, or scrolling information that starts automatically and lasts more than five seconds?</li>
+                                        <li>Is there any auto-updated information? Can it be paused?</li>
+                                        <li>Does any content flash or blink more than three times in one second?</li>
+                                    </ul>
+                                </td>
+                                <td>While there is content on the page that appears in its position suddenly as well as a button that spins around several times before stopping, there is no blinking or scrolling information. Additionally, of the content that moves, it starts automatically, but it does not last for more than five seconds. It cannot be paused or otherwise prevented as the website currently is. Because there is no flashing or blinking content, no content flashes or blinks more than three times in one second.
+                                </td>
+                                <td>Recommendation: 
+                                    While we believe that the moving content on the pages of the website cannot cause a seizure, they are still distracting and unnecessary. As such, we believe that removing the components that make the content move would benefit the site.
+                                    <br><br>
+                                    WCAG 2.1 guideline link: <a href="https://www.w3.org/WAI/WCAG21/Understanding/three-flashes-or-below-threshold">Guideline 2.3 - Seizures and Physical Reactions; and 2.3.1 Three Flashes or Below Threshold - Level A</a>
+                                    </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col_port" style="width: 60%;">
+                    <h3>Wireframe of Current Site</h3>
+                    <h4>Home Page</h4>
+                    <img src="../media/wireframe_before_home.png" width="50%" alt="">
+                    <h4>Contact Page</h4>
+                    <img src="../media/wireframe_before_contact.png" width="50%" alt="">
+                    <h3>Site Map of Current Site</h3>
+                    <img src="../media/sitemap_before.png" width="50%" alt="" style="border: 1px solid #333; border-radius: 4px;">
+                    <!--<h3>Persona Profile</h3>
+                    <h3>Persona Walk-Through of Current Site</h3>
+                    <h4>Scenario 1: The user is trying to look at their menu online</h4>
+                    <h4>Scenario 2: The user is trying to look up their phone number</h4>-->
+
+                </div>
+                <h2 class="buffdiv">After</h2>
+                <div class="col_port" style="width: 60%;">
+                    <h3>Wireframe of Redesigned Site</h3>
+                    <p>For our changes to the outline of The Buff Restaurant’s website, we decided to make the website feel more
+                         modern, reposition elements, create more structure by adding headers, and improve forms. While we 
+                         repositioned a lot of elements, please note that we tried to keep most of the content that the original 
+                         developers of the website decided to include on each page as a way to ensure that the purposes of the 
+                         website were still present.
+                    </p>
+                    <p>Firstly, the current website of The Buff Restaurant feels very outdated. As such, we decided to change the 
+                        position of a few of the elements to give our version of the website a cleaner and more modern feel. For 
+                        example, the navigation bar of the current website is below a large image of The Buff Restaurant’s logo 
+                        and obscures the majority of the screen when landing on a new page. Because this design forces the user 
+                        to scroll down just to understand the important information on a new page and simply isn’t aesthetically 
+                        pleasing, we changed the navigation bar to be at the very top of the page, with the restaurant’s logo at 
+                        the left of the navigation bar and the page tabs oriented to the right. This new design is in line with 
+                        many modern websites and doesn’t require the user to scroll down nearly as much as the website’s current 
+                        design.
+                    </p>
+                    <p>In addition to changing the position of the navigation bar and logo, we also rearranged the main content 
+                        of both the home page and the contact page, separating sections and making each page more linear. For 
+                        example, on the homepage of the current website, there are four buttons in a 2x2 grid with no section 
+                        header above them. Of these buttons, two address online orders and two address gift certificates. We 
+                        thought that it was odd that these were all grouped together, so we separated them into two different 
+                        categories with the titles “Order Online” and “Gift Certificates.” These titles are intended to be marked 
+                        up as &lt;h2&gt; and will add structure to our redesigned website.
+                    </p>
+                    <p>Furthermore, none of the pages of the current website of The Buff have headers marked up as 
+                        &lt;h1&gt;. As this is an issue that affects users experiencing the page both visually and 
+                        non-visually, we added titles to the top of each page, intended to be marked up as &lt;h1&gt;. 
+                        For the home page, this title is “Welcome to The Buff Restaurant,” and for the contact page, this title is 
+                        “Contact Us.” 
+                    </p>
+                    <p>We also thought that it would be appropriate to add a form to the contact page in place of a link to email 
+                        as well as improve the existing form on the home page by using the techniques that we learned in class. The 
+                        form on the current home page does not indicate the required fields unless a user clicks on the button to 
+                        submit the form with one or more of the fields missing. With our changes, text before the form indicates 
+                        that all fields are required as well as putting asterisks after each field name. Moreover, the form on the 
+                        current home page states the name of the desired input of each text field within the textbox, and these 
+                        names disappear as soon as a user starts typing within a textbox. We tried to make the form less confusing 
+                        by following the form structure proposed in class by placing the name of the desired input to the left of 
+                        the field.
+                    </p>
+                    <h4>Home Page</h4>
+                    <img src="../media/wireframe_after_home.png" width="50%" alt="">
+                    <h4>Contact Page</h4>
+                    <img src="../media/wireframe_after_contact.png" width="50%" alt="">
+                    <h3>Site Map of Redesigned Site</h3>
+                    <img src="../media/sitemap_before.png" width="50%" alt="" style="border: 1px solid #333; border-radius: 4px;">
+                    <p><br>The Buff Restaurant’s current website is fairly simple, with only five pages with a couple links to external 
+                        sites. We decided to not change the sitemap, as we felt that their current design was straightforward and 
+                        effective in conveying information relevant to their business. Furthermore, many other restaurants have 
+                        similar sitemaps, so we feel confident that this is a solid design.</p>
+                    <h3>Recoded Site</h3>
+                    <h4 style="display: inline;">URL:</h4> 
+                    <p style="display: inline;">
+                        <a href="https://elsm2388.github.io/CSCI-ATLS-3150/buffrestaurant/home.html">https://elsm2388.github.io/CSCI-ATLS-3150/buffrestaurant/home.html</a>
+                    </p>
+                    <br>
+                    <h4 style="display: inline;">Files available at:</h4> 
+                    <p style="display: inline;">
+                        <a href="https://github.com/elsm2388/CSCI-ATLS-3150/tree/main/buffrestaurant">https://github.com/elsm2388/CSCI-ATLS-3150/tree/main/buffrestaurant</a>
+                    </p>
+                    <h4>Home Page</h4>
+                    <img src="../media/buffrest_after.jpg" width="50%" alt="">
+                    <h4>Contact Page</h4>
+                    <img src="../media/buffcontactafter.jpg" width="50%" alt="">
+                    <!--<h3>Persona Walk-Through of Redesigned Site</h3>-->
+                    <!--<h3>Next Steps</h3>-->
+
+                </div>
+            </div>
+
+            <!-- 
             <div class="row">
                 <div class="col_port" style="width: 70%;">
                     <div class="img">
@@ -72,7 +386,7 @@
                     </div>
                 </div>
             </div>
-            
+            -->
 
             <!-- The Modal -->
             <div id="myModal" class="modal">
@@ -86,6 +400,7 @@
     </main>
 
     <!--footer-->
+    
     <footer class="flex-container" role="contentinfo">
         <div>
             <div class="foot">

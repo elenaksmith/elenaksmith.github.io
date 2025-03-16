@@ -404,6 +404,7 @@ iframe{
     display: inline-block;
     padding: 10px;
     vertical-align: top;
+    font-size: medium;
 }
 
 .row_port {
@@ -414,6 +415,37 @@ iframe{
 
 .row_port h3 {
     font-weight: 300;
+}
+
+tr {
+    text-align: left;
+    vertical-align: top;
+}
+
+td {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+tr ul {
+    padding-left: 1.5em;
+}
+
+.titletr {
+    text-align: center;
+    background-color: #FFDE7A;
+}
+
+.buffdiv {
+    background-color: #FFDE7A;
+    padding: 1em;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width:100%;
+    overflow: hidden;
 }
 
 .graphic {
