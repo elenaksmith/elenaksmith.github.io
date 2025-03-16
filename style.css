@@ -422,7 +422,7 @@ tr {
     vertical-align: top;
 }
 
-td {
+td, th {
     padding-top: 8px;
     padding-bottom: 8px;
     padding-left: 8px;
