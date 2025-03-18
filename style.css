@@ -560,10 +560,10 @@ div.img img:hover{
 }
 
 .html-comment {
-    color: slategrey;
+    color: #535353;
 }
 
-.html-attribute {
+.html-attribute, .css-pseudo-class {
     color: green;
 }
 
@@ -572,15 +572,11 @@ div.img img:hover{
 }
 
 .css-class {
-    color: brown;
-}
-
-.css-pseudo-class {
-    color: #085;
+    color: #971717;
 }
 
 .css-property {
-    color: #d73a49;
+    color: #AD148C;
 }
 
 .div-block {
