@@ -298,12 +298,172 @@
                 </div>
                 <div class="col_port" style="width: 60%;">
                     <h3>Site Map of Current Site</h3>
-                    <img src="../media/sitemap_before.png" width="50%" alt="Diagram of the site map of The Buff Restaurant's current website. A bubble with 'The Buff Restaurant' is above and connected to five other bubbles with the words 'Home,' 'About,' 'Dine-in Menu,' 'Drinks,' and 'Contact.'" style="border: 1px solid #333; border-radius: 4px;">
+                    <img src="../media/sitemap_before.png" width="65%" alt="Diagram of the site map of The Buff Restaurant's current website. A bubble with 'The Buff Restaurant' is above and connected to five other bubbles with the words 'Home,' 'About,' 'Dine-in Menu,' 'Drinks,' and 'Contact.'" style="border: 1px solid #333; border-radius: 4px;">
                     <p><br>The site map of the current website of The Buff Restaurant is simple, with a few links that connect to different websites to allow users to order food, buy gift certificates, and check the balances of gift certificates. As such, there are only five pages that are attached to the base URL of www.buffrestaurant.com: "Home," "About," "Dine-in Menu," "Drinks," and "Contact."</p>
-                    <!--<h3>Persona Profile</h3>
+                    <h3>Persona Profile</h3>
+                    <p>In order to better understand the user we're going to be designing for, we created a user 
+                        persona. Having a user persona gives a face to a potential user group and will guide us in identifying 
+                        issues with the current version of The Buff Restaurant's website. We also want to make sure that we're 
+                        able to achieve our goal of creating a good user experience for this user group and not for ourselves.</p>
+                </div>
+                <div class="col_port" style="width: 80%; padding-top: 0;">
+                    <table border="1">
+                        <tbody>
+                            <tr>
+                                <td rowspan="2">
+                                    <img src="../media/buffrest_persona.png" width="100%" alt="Our user 'Alex Smith,' a refined-looking young man in glasses and a gray sweater">
+                                </td>
+                                <th colspan="2"><h4>Alex Smith</h4></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h5>Background</h5>
+                                    <ul>
+                                        <li><b>Age</b>: 28 years old</li>
+                                        <li><b>Occupation</b>: Software developer</li>
+                                        <li><b>Level of Computer Expertise</b>: Highly skilled and familiar with computers and assistive technologies</li>
+                                        <li><b>Location</b>: Boulder, CO</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <h5>Main Points</h5>
+                                    <ul>
+                                        <li>Tech-savvy</li>
+                                        <li>Visually impaired, but can see some text if large enough and with enough contrast</li>
+                                        <li>Normally uses VoiceOver and/or a braille display to navigate technology</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h5>Goals</h5>
+                                    <ul>
+                                        <li>Be able to navigate and access the necessary information a website using VoiceOver or a braille display</li>
+                                        <li>Be able to follow the structure of a webpage without getting confused or frustrated by inconsistency or inappropriate structure</li>
+                                    </ul>
+                                </td>
+                                <td colspan="2">
+                                    <h5>Narrative</h5>
+                                    <p>Alex is a 28-year-old software developer living in Boulder, CO. Alex has been visually impaired since birth. He can see some text if enlarged to a certain point and can see light and shadows. He is highly skilled in using assistive technologies and is passionate about making the digital world more accessible. To access the internet and navigate technology, he often uses assistive technologies such as VoiceOver and a braille display. He enjoys coding, gaming, and exploring new apps. </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h5>Frustrations and Pain Points</h5>
+                                    <ul>
+                                        <li>Websites without a structure that can be coherently understood by VoiceOver or a braille display</li>
+                                        <li>Images containing lots of text that can’t be read by VoiceOver</li>
+                                    </ul>
+                                </td>
+                                <td colspan="2">
+                                    <h5>Scenarios</h5>
+                                    <ul>
+                                        <li>Coding on a laptop for work</li>
+                                        <li>Respond to texts on smartphone</li>
+                                        <li>Read and respond to emails on laptop or smartphone</li>
+                                        <li>Look up information on laptop or smartphone</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col_port" style="width: 60%;">
                     <h3>Persona Walk-Through of Current Site</h3>
-                    <h4>Scenario 1: The user is trying to look at their menu online</h4>
-                    <h4>Scenario 2: The user is trying to look up their phone number</h4>-->
+                    <p>We can use the viewpoint of Alex, the young man in our user persona,
+                        to identify pain points and frustrations that people with visual impairments might have when accessing 
+                        The Buff Restaurant's website.<br><br></p>
+                    <h4 style="text-align: left;">Scenario 1: The user is trying to look at their menu online</h4>
+                    <div style="text-align: left;">
+                        <h5 style="font-size: medium;">Step 1</h5>
+                        <p>Screen: Home page</p>
+                        <p>Comments/Issues: Low contrast on home page, and speech dictation did not read off the tab for their Dine-in Menu</p>
+                        <p>Principle & WCAG 2.1 Guideline: 
+                            <ul>
+                                <li>Principle: Perceivable 
+                                    <ul>
+                                        <li>Guideline 1.4.3 (Contrast - Minimum)</li>
+                                    </ul>
+                                </li>
+                                <li>Principle: Operable
+                                    <ul>
+                                        <li>Guideline 2.1.1 (Keyboard)</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </p>
+                        <p>Suggestions for solutions: 
+                            <ul>
+                                <li>Ensure that the text on the homepage has sufficient contrast against the background</li>
+                                <li>Choose fonts that are easy to read, and make sure they are of an adequate size</li>
+                                <li>Make sure the HTML structure is semantically correct</li>
+                                <li>Verify the issue across various speech recognition software tools</li>
+                            </ul>
+                        </p>
+                        <h5 style="font-size: medium;">Step 2</h5>
+                        <p>Screen: Menu page</p>
+                        <p>Comments/Issues: Low contrast, blurry text, able to enlarge text but it does get cut off the screen, not speech dictation friendly</p>
+                        <p>Principle & WCAG 2.1 Guideline: 
+                            <ul>
+                                <li>Principle: Perceivable 
+                                    <ul>
+                                        <li>Guideline: Distinguishable (1.4)</li>
+                                    </ul>
+                                </li>
+                                <li>Principle: Operable 
+                                    <ul>
+                                        <li>Guideline: Operable (2.1)</li>
+                                    </ul>
+                                </li>
+                                <li>Principle: Understandable
+                                    <ul>
+                                        <li>Guideline: Readable (3.1)</li>
+                                        <li>Guideline: Predictable (3.2)</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </p>
+                        <p>Suggestions for solutions: 
+                            <ul>
+                                <li>Increase the contrast between text and background to meet accessibility standards</li>
+                                <li>Ensure that text remains clear and legible even when enlarged</li>
+                                <li>Implement responsive design to accommodate text enlargement without cutting off content</li>
+                                <li>Optimize text readability and clarity to address issues with blurry text</li>
+                                <li>Enhance keyboard accessibility for all interactive elements</li>
+                                <li>Provide alternative text for images to make content accessible to screen readers</li>
+                                <li>Test the website with speech dictation software and make adjustments to ensure a more seamless experience for users relying on such tools</li>
+                            </ul>
+                            <br>
+                        </p>
+                    </div>
+                    
+                    <h4 style="text-align: left;">Scenario 2: The user is trying to look up their phone number</h4>
+                    <div style="text-align: left;">
+                        <h5 style="font-size: medium;">Step 1</h5>
+                        <p>Screen: Home page</p>
+                        <p>Comments/Issues: Low contrast on the home page. Speech dictation did not read the whole page, but did read the phone number.</p>
+                        <p>Principle & WCAG 2.1 Guideline: 
+                            <ul>
+                                <li>Principle: Perceivable
+                                    <ul>
+                                        <li>Guideline 1.4.3 (Contrast - Minimum)</li>
+                                    </ul>
+                                </li>
+                                <li>Principle: Operable
+                                    <ul>
+                                        <li>Guideline 2.1.1 (Keyboard)</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </p>
+                        <p>Suggestions for solutions: 
+                            <ul>
+                                <li>Ensure that the text on the homepage has sufficient contrast against the background</li>
+                                <li>Choose fonts that are easy to read, and make sure they are of an adequate size</li>
+                            </ul>
+                            <br>
+                        </p>
+                    </div>
                 </div>
                 <h2 class="buffdiv">After</h2>
                 <div class="row">
@@ -363,7 +523,7 @@
                         the field.
                     </p>
                     <h3>Site Map of Redesigned Site</h3>
-                    <img src="../media/sitemap_before.png" width="50%" alt="Diagram of the site map of The Buff Restaurant's current website. A bubble with 'The Buff Restaurant' is above and connected to five other bubbles with the words 'Home,' 'About,' 'Dine-in Menu,' 'Drinks,' and 'Contact.'" style="border: 1px solid #333; border-radius: 4px;">
+                    <img src="../media/sitemap_before.png" width="65%" alt="Diagram of the site map of The Buff Restaurant's current website. A bubble with 'The Buff Restaurant' is above and connected to five other bubbles with the words 'Home,' 'About,' 'Dine-in Menu,' 'Drinks,' and 'Contact.'" style="border: 1px solid #333; border-radius: 4px;">
                     <p><br>The Buff Restaurant’s current website is fairly simple, with only five pages with a couple links to external 
                         sites. We decided to not change the sitemap, as we felt that their current design was straightforward and 
                         effective in conveying information relevant to their business. Furthermore, many other restaurants have 
