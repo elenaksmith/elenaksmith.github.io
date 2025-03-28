@@ -623,16 +623,16 @@ div.img img:hover{
     list-style: none;
     margin: 0;
     padding: 0;
-}
-
-.blog-dir li {
-    margin: 2.3em;
+    display: inline-block;
+    width: 70%;
 }
 
 .blog-dir a {
+    display: flex;
+    flex:auto;
     border-bottom: 2px solid #d3d3d3;
     border-radius: 0px;
-    padding-top: 1em;
+    padding-top: 1.5em;
     padding-bottom: 1.5em;
     padding-left: 1em;
     padding-right: 1em;
@@ -654,7 +654,7 @@ div.img img:hover{
 .blog-title {
     margin:auto;
     display: inline-block;
-    width: 30%;
+    width: 70%;
     padding: 5px;
     vertical-align: top;
     text-align: left;
