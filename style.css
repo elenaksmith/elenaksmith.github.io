@@ -541,12 +541,28 @@ div.img img:hover{
     padding: 5px;
     vertical-align: top;
     font-size: medium;
+    padding-bottom: 2em;
 }
 
 .blog p {
     margin-top: 2em;
     margin-bottom: 2em;
     line-height: 1.5;
+}
+
+#aws_iframe {
+    width: 100%;
+    border: 1px solid;
+    border-color: #333;
+	border-radius: 4px;
+    
+}
+
+.resizable {
+    height: 300px;
+    resize: vertical;
+    overflow: auto;
+    display: flex;
 }
 
 /*.blog h1 {
